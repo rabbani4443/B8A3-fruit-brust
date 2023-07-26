@@ -5,38 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit-Brust</title>
     <link rel="shortcut icon" href="./asset/images/fruit6.png" type="image/x-icon">
-    <!-- Tailwindcss & Daisyui  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Tailwindcss & Daisyui  -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+         <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/8eeade2299.js" crossorigin="anonymous"></script>
+    <style>
+      .font-Lato {
+       font-family: 'Lato', sans-serif;
+   }
+</style>
     
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'red-bg': '#F85559',
               }
             }
           }
         }
       </script>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-<style>
-       .font-Lato {
-        font-family: 'Lato', sans-serif;
-    }
-</style>
-
-
 
 </head>
-<body class=".font-Lato ">
-    <header></header>
+
+<body class="font-Lato ">
+  <!-- Header Section -->
+    <header class="md:w-10/12 w-11/12 m-auto ">
+      <nav class="my-8">
+
+        <div class="navbar bg-base-100 bg-red-bg rounded-full ">
+          <div class="navbar-start ">
+            <div class="hidden md:block">
+              <a href="#" class="text-xl font-medium pl-12 pr-5 text-white">Home</a>
+              <a href="#" class="text-xl font-medium pr-5 text-white">About Us</a>
+              <a href="#" class="text-xl font-medium pr-5 text-white">Shop</a>
+              <a href="#" class="text-xl font-medium pr-5 text-white">All Fruits</a>
+            </div>
+            <div class="dropdown md:hidden ">
+              <label tabindex="0" class="btn btn-ghost btn-circle">
+                <i class="fa-solid fa-bars text-3xl font-extrabold text-white pl-4"></i>
+
+
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a href="#" class="text-xl font-semibold pr-5 text-black">Home</a></li>
+                <li><a href="#" class="text-xl font-semibold pr-5 text-black">About Us</a></li>
+                <li><a href="#" class="text-xl font-semibold pr-5 text-black">Shop</a></li>
+                <li><a href="#" class="text-xl font-semibold pr-5 text-black">All Fruits</a></li>
+                <div class=" relative">
+                  <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-full " />
+                 <a href="#" class="text-center absolute right-6 top-3">
+                  <i class="fa-solid fa-magnifying-glass "></i>
+                 </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="navbar-center md:pr-0 pr-6 ">
+            <img src="./asset/images/logo.png" alt="Fruit Burst">
+            <a class="normal-case text-3xl font-semibold text-white ml-3">Fruit Burst</a>
+          </div>
+
+          <div class="navbar-end hidden md:flex relative">
+            <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-full mr-7" />
+           <a href="#" class="text-center absolute right-14">
+            <i class="fa-solid fa-magnifying-glass "></i>
+           </a>
+          </div>
+        </div>
+
+      </nav>
+    </header>
+    <!-- Main Section -->
     <main></main>
+    <!-- Footer Section -->
     <footer></footer>
     
 </body>
