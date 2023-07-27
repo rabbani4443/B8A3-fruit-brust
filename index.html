@@ -19,6 +19,11 @@
       .font-Lato {
        font-family: 'Lato', sans-serif;
    }
+.mo-re-he{
+  display: none;
+}
+
+
 </style>
     
     <script>
@@ -39,28 +44,26 @@
 
 <body class="font-Lato ">
   <!-- Header Section -->
-    <header class="md:w-10/12 w-11/12 m-auto ">
+    <header class="lg:w-10/12  w-11/12 m-auto ">
       <!-- Navbar Section -->
-      <nav class="my-8">
-        <div class="navbar bg-base-100 bg-red-bg rounded-full ">
+      <nav class="lg:my-8 sm:my-3">
+        <div class="navbar md:bg-red-bg md:rounded-full">
           <div class="navbar-start ">
-            <div class="hidden md:block">
-              <a href="#" class="text-xl font-semibold pl-12 pr-5 text-white">Home</a>
-              <a href="#" class="text-xl font-semibold pr-5 text-white">About Us</a>
-              <a href="#" class="text-xl font-semibold pr-5 text-white">Shop</a>
-              <a href="#" class="text-xl font-semibold pr-5 text-white">All Fruits</a>
+            <div class="hidden md:flex lg:gap-6 gap-4">
+              <a href="#" class="lg:text-xl text-base pl-4 text-white">Home</a>
+              <a href="#" class="lg:text-xl text-base  text-white">About Us</a>
+              <a href="#" class="lg:text-xl text-base  text-white">Shop</a>
+              <a href="#" class="lg:text-xl text-base  text-white">All Fruits</a>
             </div>
             <div class="dropdown md:hidden ">
               <label tabindex="0" class="btn btn-ghost btn-circle">
-                <i class="fa-solid fa-bars text-3xl font-extrabold text-white pl-4"></i>
-
-
+                <i class="fa-solid fa-bars text-2xl font-extrabold text-gray-600 pl-4"></i>
               </label>
-              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a href="#" class="text-xl font-semibold pr-5 text-black">Home</a></li>
-                <li><a href="#" class="text-xl font-semibold pr-5 text-black">About Us</a></li>
-                <li><a href="#" class="text-xl font-semibold pr-5 text-black">Shop</a></li>
-                <li><a href="#" class="text-xl font-semibold pr-5 text-black">All Fruits</a></li>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-0 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a href="#" class="text-xl pr-5 text-black">Home</a></li>
+                <li><a href="#" class="text-xl pr-5 text-black">About Us</a></li>
+                <li><a href="#" class="text-xl pr-5 text-black">Shop</a></li>
+                <li><a href="#" class="text-xl pr-5 text-black">All Fruits</a></li>
                 <div class=" relative">
                   <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-full " />
                  <a href="#" class="text-center absolute right-6 top-3">
@@ -70,104 +73,105 @@
               </ul>
             </div>
           </div>
-
-
-          <div class="navbar-center md:pr-0 pr-6 ">
-            <img src="./asset/images/logo.png" alt="Fruit Burst">
-            <a class="normal-case text-3xl md:font-extrabold text-white ml-3">Fruit Burst</a>
+          <div class="navbar-center md:pr-0 pr-6  -mr-12 lg:-mr-0">
+            <img src="./asset/images/logo.png" alt="Fruit Burst" class=" w-10">
+            <a class="normal-case text-xl lg:text-2xl font-semibold md:text-white ml-2">Fruit Burst</a>
           </div>
-
           <div class="navbar-end hidden md:flex relative">
-            <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs rounded-full mr-7 py-4 pl-6" />
-           <a href="#" class="text-center absolute right-14">
-            <i class="fa-solid fa-magnifying-glass "></i>
+            <input type="text" placeholder="Search here" class="input input-bordered lg:w-full lg:max-w-xs rounded-full mr-2 lg:py-2 py-0 pl-4 pr-0 lg:pl-6" />
+           <a href="#" class="text-center absolute right-7">
+            <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
            </a>
           </div>
         </div>
-
       </nav>
-<!-- Banner Section -->
+    <!-- Banner Section -->
     <!-- all Slider -->
     <div class="carousel w-full relative ">
       <!-- Slide-01 -->
-        <div id="slide1" class="carousel-item relative w-full ">
-          <img src="./asset/images/banner1.png" class="w-full absolute" />
-          <div class="absolute inset-0 bg-black opacity-40"></div> 
-          <div class="absolute inset-0 flex items-center justify-center flex-col ">
-            <h1 class="text-xl md:text-5xl font-extrabold text-white text-center md:pt-0 pt-4">Exotic tastes at your <br> doorstep </h1>
-            <p class="text-base  py-2  text-gray-50">We supply highly quality organic products</p>
-            <button class="bg-red-bg border-none  text-xl   px-4 py-2 text-gray-50  rounded-xl mb-4 md:">Shop Now</button>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle bg-gray-700 border-0 hover:bg-gray-700">
-              <i class="fa-solid fa-chevron-left text-white md:text-2xl "></i>
-            </a> 
-            <a href="#slide2" class="btn btn-circle bg-gray-700 border-0 hover:bg-gray-700">
-              <i class="fa-solid fa-chevron-right text-white md:text-2xl "></i>
-            </a> 
-          </div>
-        </div>
+      <div id="slide1" class="carousel-item relative w-full ">
+              <img src="./asset/images/banner1.png" class="w-full absolute " />
+              <div class="absolute inset-0 bg-black opacity-40"></div> 
 
+              <div class="absolute inset-0 flex items-center justify-center flex-col md:py-0 py-14">
+                <h1 class="text-2xl sm:text-3xl sm:font-semibold lg:text-5xl lg:font-extrabold text-white text-center md:pt-0 pt-4">Exotic tastes at your <br > doorstep </h1>
+                <p class="lg:text-base text-sm lg:pt-3 lg:pb-6 md:py-3 py-2 text-gray-50">We supply highly quality organic products</p>
+                <button class="bg-red-bg border-none lg:text-xl text-base px-4  lg:py-2 py-1 text-gray-50  rounded-xl mb-4 md:">Shop Now</button>
+              </div>
 
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class=" ">
+                  <i class="fa-solid fa-chevron-left text-white md:text-xl bg-[#4b556385] border-0 hover:bg-[#4b556385] rounded-full md:px-3 md:py-1 py-1 px-2 text-sm"></i>
+                </a> 
+                <a href="#slide2" class="">
+                  <i class="fa-solid fa-chevron-right text-white md:text-xl bg-[#4b556385] border-0 hover:bg-[#4b556385] rounded-full md:px-3 md:py-1 py-1 px-2 text-sm"></i>
+                </a> 
+              </div>
+      </div>
         <!-- Slide-02 -->
-      <div id="slide2" class="carousel-item relative w-full">
-          <img src="./asset/images/banner2.png" class="w-full absolute" />
-          <div class="absolute inset-0 bg-black opacity-50"></div> 
-          <div class="absolute inset-0 flex items-center justify-center flex-col ">
-            <h1 class="text-xl md:text-5xl font-extrabold text-white text-center md:pt-0 pt-4">Exotic tastes at your <br> doorstep-02 </h1>
-            <p class="text-base   py-2  text-gray-50">We supply highly quality organic products</p>
-            <button class="bg-red-bg border-none  text-xl   px-4 py-2 text-gray-50  rounded-xl mb-4 md:">Shop Now</button>
-          </div>
+        <div id="slide2" class="carousel-item relative w-full">
+              <img src="./asset/images/banner2.png" class="w-full absolute" />
+              <div class="absolute inset-0 bg-black opacity-50"></div> 
 
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" class="btn btn-circle bg-gray-700 border-0 hover:bg-gray-700">
-            <i class="fa-solid fa-chevron-left text-white md:text-2xl "></i>
-          </a> 
-          <a href="#slide3" class="btn btn-circle bg-gray-700 border-0 hover:bg-gray-700">
-            <i class="fa-solid fa-chevron-right text-white md:text-2xl "></i>
-          </a> 
-        </div>
-      </div> 
-      <!-- Slide-03 -->
-      <div id="slide3" class="carousel-item relative w-full">
-          <img src="./asset/images/banner3.png" class="w-full absolute" />
-          <div class="absolute inset-0 bg-black opacity-40"></div> 
-          <div class="absolute inset-0 flex items-center justify-center flex-col ">
-            <h1 class="text-xl md:text-5xl font-extrabold text-white text-center md:pt-0 pt-4">Exotic tastes at your <br> doorstep-03 </h1>
-            <p class="text-base  py-2  text-gray-50">We supply highly quality organic products</p>
-            <button class="bg-red-bg border-none  text-xl   px-4 py-2 text-gray-50  rounded-xl mb-4 md:">Shop Now</button>
+              <div class="absolute inset-0 flex items-center justify-center flex-col md:py-0 py-14">
+                <h1 class="text-2xl sm:text-3xl sm:font-semibold lg:text-5xl lg:font-extrabold text-white text-center md:pt-0 pt-4">Exotic tastes at your <br > doorstep-02 </h1>
+                <p class="lg:text-base text-sm lg:pt-3 lg:pb-6 md:py-3 py-2 text-gray-50">We supply highly quality organic products-02</p>
+                <button class="bg-red-bg border-none lg:text-xl text-base px-4  lg:py-2 py-1 text-gray-50  rounded-xl mb-4 md:">Shop Now</button>
+              </div>
+
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class=" ">
+                  <i class="fa-solid fa-chevron-left text-white md:text-xl bg-[#4b556385] border-0 hover:bg-[#4b556385] rounded-full md:px-3 md:py-1 py-1 px-2 text-sm"></i>
+                </a> 
+                <a href="#slide3" class="">
+                  <i class="fa-solid fa-chevron-right text-white md:text-xl bg-[#4b556385] border-0 hover:bg-[#4b556385] rounded-full md:px-3 md:py-1 py-1 px-2 text-sm"></i>
+                </a> 
+              </div>
+        </div> 
+          <!-- Slide-03 -->
+          <div id="slide3" class="carousel-item relative w-full">
+              <img src="./asset/images/banner3.png" class="w-full absolute" />
+              <div class="absolute inset-0 bg-black opacity-40"></div> 
+
+              <div class="absolute inset-0 flex items-center justify-center flex-col md:py-0 py-14">
+                <h1 class="text-2xl sm:text-3xl sm:font-semibold lg:text-5xl lg:font-extrabold text-white text-center md:pt-0 pt-4">Exotic tastes at your <br > doorstep-03</h1>
+                <p class="lg:text-base text-sm lg:pt-3 lg:pb-6 md:py-3 py-2 text-gray-50">We supply highly quality organic products</p>
+                <button class="bg-red-bg border-none lg:text-xl text-base px-4  lg:py-2 py-1 text-gray-50  rounded-xl mb-4 md:">Shop Now</button>
+              </div>
+
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class=" ">
+                  <i class="fa-solid fa-chevron-left text-white md:text-xl bg-[#4b556385] border-0 hover:bg-[#4b556385] rounded-full md:px-3 md:py-1 py-1 px-2 text-sm"></i>
+                </a> 
+                <a href="#slide4" class="">
+                  <i class="fa-solid fa-chevron-right text-white md:text-xl bg-[#4b556385] border-0 hover:bg-[#4b556385] rounded-full md:px-3 md:py-1 py-1 px-2 text-sm"></i>
+                </a> 
+              </div>
+          </div> 
+           <!-- Slide-04 -->
+          <div id="slide4" class="carousel-item relative w-full">
+              <img src="./asset/images/banner4.png" class="w-full " />
+              <div class="absolute inset-0 bg-black opacity-60"></div> 
+
+              <div class="absolute inset-0 flex items-center justify-center flex-col md:py-0 py-14">
+                <h1 class="text-2xl sm:text-3xl sm:font-semibold lg:text-5xl lg:font-extrabold text-white text-center md:pt-0 pt-4">Exotic tastes at your <br > doorstep-04</h1>
+                <p class="lg:text-base text-sm lg:pt-3 lg:pb-6 md:py-3 py-2 text-gray-50">We supply highly quality organic products</p>
+                <button class="bg-red-bg border-none lg:text-xl text-base px-4  lg:py-2 py-1 text-gray-50  rounded-xl mb-4 md:">Shop Now</button>
+              </div>
+
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class=" ">
+                  <i class="fa-solid fa-chevron-left text-white md:text-xl bg-[#4b556385] border-0 hover:bg-[#4b556385] rounded-full md:px-3 md:py-1 py-1 px-2 text-sm"></i>
+                </a> 
+                <a href="#slide1" class="">
+                  <i class="fa-solid fa-chevron-right text-white md:text-xl bg-[#4b556385] border-0 hover:bg-[#4b556385] rounded-full md:px-3 md:py-1 py-1 px-2 text-sm"></i>
+                </a> 
+              </div>
           </div>
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide2" class="btn btn-circle bg-gray-700 border-0 hover:bg-gray-700">
-            <i class="fa-solid fa-chevron-left text-white md:text-2xl "></i>
-          </a> 
-          <a href="#slide4" class="btn btn-circle bg-gray-700 border-0 hover:bg-gray-700">
-            <i class="fa-solid fa-chevron-right text-white md:text-2xl "></i>
-          </a> 
-        </div>
-      </div> 
-      <!-- Slide-04 -->
-    <div id="slide4" class="carousel-item relative w-full">
-          <img src="./asset/images/banner4.png" class="w-full " />
-          <div class="absolute inset-0 bg-black opacity-60"></div> 
-          <div class="absolute inset-0 flex items-center justify-center flex-col ">
-            <h1 class="text-xl md:text-5xl font-extrabold text-white text-center md:pt-0 pt-4">Exotic tastes at your <br> doorstep-04 </h1>
-            <p class="text-base  py-2  text-gray-50">We supply highly quality organic products</p>
-            <button class="bg-red-bg border-none  text-xl   px-4 py-2 text-gray-50  rounded-xl mb-4 md:">Shop Now</button>
-          </div>
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide3" class="btn btn-circle bg-gray-700 border-0 hover:bg-gray-700">
-            <i class="fa-solid fa-chevron-left text-white md:text-2xl "></i>
-          </a> 
-          <a href="#slide1" class="btn btn-circle bg-gray-700 border-0 hover:bg-gray-700">
-            <i class="fa-solid fa-chevron-right text-white md:text-2xl "></i>
-          </a> 
-        </div>
     </div>
-    </div>
-              <!-- other -->
-              <div class="absolute w-3/5 right-[255px] top-[80%] md:block hidden ">
-                <div class=" grid grid-cols-5 gap-4 bg-gray-50 p-8 rounded-xl drop-shadow-2xl border-b-2 border-gray-200">
+    <!-- Name and picture of fruit-->
+    <div class="absolute w-3/5 right-[255px] top-[80%] lg:flex hidden ">
+      <div class=" grid grid-cols-5 gap-4 bg-gray-50 p-8 rounded-xl drop-shadow-2xl border-b-2 border-gray-200">
                   <div class="flex justify-center items-center flex-col">
                    <img src="./asset/images/fruit1.png" alt="" class="">
                     <p class="text-base font-semibold pt-3">Strawberry</p>
@@ -190,15 +194,13 @@
                    <img src="./asset/images/fruit5.png" alt="" class="">
                     <p class="text-base font-semibold pt-3">Mango</p>
                   </div>
-    
-                </div>
-              </div>
-               <!-- other -->
+      </div>
+    </div>
     </header>
     <!-- Main Section -->
-    <main class="md:w-10/12 w-11/12 m-auto">
+    <main class="md:w-10/12 w-11/12 m-auto mo-re-he">
       <!-- Deal of the day title Section -->
-      <section class="md:mt-52 my-5 ">
+      <section class="md:mt-52 my-5 mo-re-he ">
         <div class="flex  text-center md:text-start justify-between items-center gap-10 flex-col md:flex-row  pb-20">
           <div class="flex-1">
             <h1 class="text-5xl font-extrabold pb-3">Deal of the day</h1>
@@ -518,7 +520,7 @@
       </section>
 
       <!-- Meet the team section -->
-      <section class="md:my-16 my-5  ">
+      <section class="md:my-16 my-5 mo-re-he">
 
         <div class="relative bg-team-bg bg-no-repeat bg-cover py-20">
           <div class="absolute inset-0 bg-black bg-opacity-70"></div>
@@ -614,7 +616,7 @@
 
       </section>
 
-      <section class="md:mt-5 mb-20 ">
+      <section class="md:mt-5 mb-20 mo-re-he">
           <div class="text-center">
             <div class="pb-14">
               <h1 class="text-5xl font-extrabold pb-3 text-gray-950">Meet the team section</h1>
@@ -707,7 +709,7 @@
       </section>
     </main>
     <!-- Footer Section -->
-      <footer class="footer footer-center p-10 bg-gray-950 text-base-content rounded text-white">
+      <footer class="mo-re-he footer footer-center p-10 bg-gray-950 text-base-content rounded text-white">
         <div class="flex">
           <img src="./asset/images/logo.png" alt="">
           <h1 class="text-4xl">Fruit Burst</h1>
